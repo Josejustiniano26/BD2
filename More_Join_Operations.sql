@@ -1,36 +1,36 @@
 #1
 SELECT id, title
  FROM movie
- WHERE yr=1962
+ WHERE yr=1962;
 #2
 SELECT yr
 FROM movie 
-WHERE title='Citizen Kane'
+WHERE title='Citizen Kane';
 #3
 select id,title,yr
 from movie
 where title like 'Star Trek%'
-order by yr
+order by yr;
 #4
 select id 
 from actor
-where name='Glenn Close'
+where name='Glenn Close';
 #5
 Select id 
 from movie 
-where title='Casablanca'
+where title='Casablanca';
 #6
 Select a.name
 from casting c left join actor a on c.actorid = a.id
-where movieid=11768 
+where movieid=11768 ;
 #7
 Select name
 from casting c left join actor a on c.actorid=a.id
-where movieid=10522
+where movieid=10522;
 #8
 Select title
 from casting c left join movie m on c.movieid= m.id
-where actorid=(select id from actor where name='Harrison Ford')
+where actorid=(select id from actor where name='Harrison Ford');
 #9
 SELECT title
 FROM movie m
